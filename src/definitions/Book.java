@@ -61,4 +61,8 @@ public class Book {
                 Objects.equals(getAuthorName(), book.getAuthorName()) &&
                 Objects.equals(getISBNNumberOfBook(), book.getISBNNumberOfBook());
     }
+    @Override
+    public int hashCode() {
+        return Objects.hash(getBookName(),getAuthorName(),getISBNNumberOfBook());
+    }
 }
