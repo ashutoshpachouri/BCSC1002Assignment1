@@ -88,5 +88,23 @@ public class Student {
     public void issueBooksToStudents(int bookIssuingIndex, String bookName) {
         namesOfTheBooksIssuedByTheStudent[bookIssuingIndex].setNameOfTheBook(bookName);
     }
+    public boolean returnBook(String bookName) {
+        boolean returnSuccessful = false;
+        int returnBookIndex = 0;
+        for (int tempIndex = 0; tempIndex < MAXIMUM_BOOKS_STUDENT_CAN_ISSUE; tempIndex++) {
+            if (bookName.equals(namesOfTheBooksIssuedByTheStudent[tempIndex].getNameOfTheBook())) {
+                returnSuccessful = true;
+                returnBookIndex = tempIndex;
+                setNumberOfBooksIssuedByTheStudent(getNumberOfBooksIssuedByTheStudent() - 1);
+                break;
+            }
+        }
+        if (returnSuccessful) {
+            namesOfTheBooksIssuedByTheStudent[returnBookIndex].setNameOfTheBook(null);
+        } else {
+            System.out.println("Please Enter the correct book name.");
+        }
+        return returnSuccessful;
+    }
 
 }
