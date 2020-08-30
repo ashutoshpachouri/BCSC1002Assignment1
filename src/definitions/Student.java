@@ -1,5 +1,5 @@
 /*  Created by IntelliJ IDEA.
- *  User:Ashutosh Pachouri
+ *  User: Ashutosh Pachouri
  *  Date: 30/08/20
  *  Time: 4:25 PM
  *  File Name : Student.java
