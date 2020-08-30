@@ -17,11 +17,11 @@ public class Library {
     }
     public Library() {
         this.Book = new String[5];
-        this.Book[0] = "issue the book";
-        this.Book[1] = "issue the book";
-        this.Book[2] = "issue the book";
-        this.Book[3] = "issue the book";
-        this.Book[4] = "issue the book";
+        this.Book[0] = "want to issue a new book";
+        this.Book[1] = "Return a previously issue book";
+        this.Book[2] = "Show me all my issue books.";
+        this.Book[3] = "exit";
+        //this.Book[4] = "issue the book";
     }
     public String[] getBook(){
         return Book.clone();
