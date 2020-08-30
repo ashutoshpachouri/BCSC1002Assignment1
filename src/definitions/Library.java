@@ -48,4 +48,22 @@ public class Library {
         return Arrays.hashCode(getBooksThatAreCurrentlyAvailable());
     }
 
+    public void setBooksInLibrary() {
+        booksThatAreCurrentlyAvailable[0].setNameOfTheBook("Engineering Mathematics");
+        booksThatAreCurrentlyAvailable[0].setNameOfTheAuthorOfTheBook("H. K. Das");
+        booksThatAreCurrentlyAvailable[0].setThirteenDigitISBNNumberOfTheBook("975283653000");
+        booksThatAreCurrentlyAvailable[1].setNameOfTheBook("Operating System");
+        booksThatAreCurrentlyAvailable[1].setNameOfTheAuthorOfTheBook("Galvin");
+        booksThatAreCurrentlyAvailable[1].setThirteenDigitISBNNumberOfTheBook("9753062012000");
+        booksThatAreCurrentlyAvailable[2].setNameOfTheBook("Database Management System");
+        booksThatAreCurrentlyAvailable[2].setNameOfTheAuthorOfTheBook("Raghu Ramkrishnan");
+        booksThatAreCurrentlyAvailable[2].setThirteenDigitISBNNumberOfTheBook("9789332582705");
+        booksThatAreCurrentlyAvailable[3].setNameOfTheBook("Fundamental of Software Engineering");
+        booksThatAreCurrentlyAvailable[3].setNameOfTheAuthorOfTheBook("Rajib Mall");
+        booksThatAreCurrentlyAvailable[3].setThirteenDigitISBNNumberOfTheBook("9789388028028");
+        booksThatAreCurrentlyAvailable[4].setNameOfTheBook("Core JAVA");
+        booksThatAreCurrentlyAvailable[4].setNameOfTheAuthorOfTheBook("Dr. R. Nageswara Rao");
+        booksThatAreCurrentlyAvailable[4].setThirteenDigitISBNNumberOfTheBook("9751199258111");
+    }
+
 }
