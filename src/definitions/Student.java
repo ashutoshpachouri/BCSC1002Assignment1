@@ -85,5 +85,8 @@ public class Student {
         result = 31 * result + Arrays.hashCode(getNamesOfTheBooksIssuedByTheStudent());
         return result;
     }
+    public void issueBooksToStudents(int bookIssuingIndex, String bookName) {
+        namesOfTheBooksIssuedByTheStudent[bookIssuingIndex].setNameOfTheBook(bookName);
+    }
 
 }
