@@ -31,5 +31,9 @@ public class Library {
     public void setBooksThatAreCurrentlyAvailable(Book[] booksThatAreCurrentlyAvailable) {
         this.booksThatAreCurrentlyAvailable = booksThatAreCurrentlyAvailable;
     }
+    @Override
+    public String toString() {
+        return Arrays.toString(booksThatAreCurrentlyAvailable);
+    }
 
 }
