@@ -5,6 +5,14 @@
  *  File Name : Student.java
  * */
 package definitions;
-
+import java.util.Arrays;
+import java.util.Objects;
+import java.util.Scanner;
 public class Student {
+    private String firstName;
+    private String middleName;
+    private String lastName;
+    private long universityRollNumber;
+    private int booksIssuedByStudent;
+    private String[] book;
 }
