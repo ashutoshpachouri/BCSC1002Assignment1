@@ -18,5 +18,13 @@ public class Student {
         this.numberOfBooksIssuedByTheStudent = numberOfBooksIssuedByTheStudent;
         this.namesOfTheBooksIssuedByTheStudent = namesOfTheBooksIssuedByTheStudent;
     }
-
+    public Student() {
+        this.nameOfTheStudent = "";
+        this.universityRollNumberOfTheStudent = 0L;
+        this.numberOfBooksIssuedByTheStudent = 0;
+        this.namesOfTheBooksIssuedByTheStudent = new Book[MAXIMUM_BOOKS_STUDENT_CAN_ISSUE];
+        for (int initializingBook = 0; initializingBook < MAXIMUM_BOOKS_STUDENT_CAN_ISSUE; initializingBook++) {
+            this.namesOfTheBooksIssuedByTheStudent[initializingBook] = new Book();
+        }
+    }
 }
