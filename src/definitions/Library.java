@@ -34,5 +34,12 @@ public class Library {
     public String toString() {
         return Arrays.toString(Book);
     }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Library library = (Library)o;
+        return Arrays.equals(getBook(),library.getBook());
+    }
 
 }
