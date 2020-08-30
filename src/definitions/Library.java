@@ -43,5 +43,9 @@ public class Library {
         Library library = (Library) o;
         return Arrays.equals(getBooksThatAreCurrentlyAvailable(), library.getBooksThatAreCurrentlyAvailable());
     }
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(getBooksThatAreCurrentlyAvailable());
+    }
 
 }
