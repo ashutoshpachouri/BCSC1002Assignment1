@@ -107,4 +107,16 @@ public class Student {
         return returnSuccessful;
     }
 
+    public void showIssuedBooksByStudent() {
+        if (getNumberOfBooksIssuedByTheStudent() == 0) {
+            System.out.println("Sorry, you haven't issued any book yet.");
+        } else {
+            System.out.println("These are the books issued by you: ");
+            for (int issuedBookIndex = 0; issuedBookIndex < MAXIMUM_BOOKS_STUDENT_CAN_ISSUE; issuedBookIndex++) {
+                if (namesOfTheBooksIssuedByTheStudent[issuedBookIndex].getNameOfTheBook() != null) {
+                    System.out.print(namesOfTheBooksIssuedByTheStudent[issuedBookIndex].getNameOfTheBook() + (issuedBookIndex < getNumberOfBooksIssuedByTheStudent() - 1 ? ", " : ".\n"));
+                }
+            }
+        }
+    }
 }
