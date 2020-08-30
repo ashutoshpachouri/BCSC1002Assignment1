@@ -23,4 +23,11 @@ public class Library {
         this.Book[3] = "issue the book";
         this.Book[4] = "issue the book";
     }
+    public String[] getBook(){
+        return Book.clone();
+    }
+
+    public void setBook(String[] book) {
+        this.Book = book;
+    }
 }
