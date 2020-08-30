@@ -41,5 +41,15 @@ public class Library {
         Library library = (Library)o;
         return Arrays.equals(getBook(),library.getBook());
     }
-
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(getBook());
+    }
+    public void listInventory(){
+        for (String Book : this.Book){
+            if (Book != null){
+                System.out.println(Book);
+            }
+        }
+    }
 }
