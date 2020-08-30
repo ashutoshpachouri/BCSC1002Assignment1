@@ -46,6 +46,12 @@ public class Book {
     public void setThirteenDigitISBNNumberOfTheBook(String thirteenDigitISBNNumberOfTheBook) {
         this.thirteenDigitISBNNumberOfTheBook = thirteenDigitISBNNumberOfTheBook;
     }
+    @Override
+    public String toString() {
+        return "Book Name: " + getNameOfTheBook() + ", " +
+                "Author Name: " + getNameOfTheAuthorOfTheBook() + ", " +
+                "13-Digit ISBN Number: " + getThirteenDigitISBNNumberOfTheBook() + ".";
+    }
 
 }
 
