@@ -5,6 +5,9 @@
  *  File Name : Student.java
  * */
 package definitions;
+
+import java.util.Arrays;
+
 public class Student {
     private static final int MAXIMUM_BOOKS_STUDENT_CAN_ISSUE = 5;
     private String nameOfTheStudent;
@@ -57,5 +60,12 @@ public class Student {
 
     public void setNamesOfTheBooksIssuedByTheStudent(Book[] namesOfTheBooksIssuedByTheStudent) {
         this.namesOfTheBooksIssuedByTheStudent = namesOfTheBooksIssuedByTheStudent;
+    }
+    @Override
+    public String toString() {
+        return "Name of Student: " + getNameOfTheStudent() + ", " +
+                "University Roll Number: " + getUniversityRollNumberOfTheStudent() + ", " +
+                "Number of Books Issued: " + getNumberOfBooksIssuedByTheStudent() + ", " +
+                "Names of Books Issued: " + Arrays.toString(getNamesOfTheBooksIssuedByTheStudent()) + ".";
     }
 }
