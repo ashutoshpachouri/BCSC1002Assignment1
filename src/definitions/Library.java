@@ -30,4 +30,9 @@ public class Library {
     public void setBook(String[] book) {
         this.Book = book;
     }
+    @Override
+    public String toString() {
+        return Arrays.toString(Book);
+    }
+
 }
